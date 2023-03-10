@@ -1,0 +1,1 @@
+python common/main_isa.py 统一安全管理平台 V200R007C01B050 192.168.4.154 Wnt.1@3456 elastic changeme 24 8G 2500

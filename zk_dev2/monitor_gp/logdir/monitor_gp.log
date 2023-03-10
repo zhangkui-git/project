@@ -1,0 +1,164 @@
+2022-10-20 09:49:10 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 09:49:10 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1217
+2022-10-20 09:49:10 AM - INFO: 当前时间为: 2022-10-20 09:49:10.794119, 股票名称：中远海特, 股票当前价格：7.55
+2022-10-20 09:49:28 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 09:49:29 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1216
+2022-10-20 09:49:29 AM - INFO: 当前时间为: 2022-10-20 09:49:29.339506, 股票名称：中远海特, 股票当前价格：7.54
+2022-10-20 09:49:40 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 09:49:40 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 09:49:40 AM - INFO: 当前时间为: 2022-10-20 09:49:40.787881, 股票名称：中远海特, 股票当前价格：7.52
+2022-10-20 11:03:34 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:03:34 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:03:41 AM - INFO: 当前时间为: 2022-10-20 11:03:41.717791, 股票名称：中远海特, 股票当前价格：7.81
+2022-10-20 11:03:56 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:03:57 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:04:04 AM - INFO: 当前时间为: 2022-10-20 11:04:04.313343, 股票名称：中远海特, 股票当前价格：7.81
+2022-10-20 11:05:33 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:05:34 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:05:41 AM - INFO: 当前时间为: 2022-10-20 11:05:41.628721, 股票名称：中远海特, 股票当前价格：7.8
+2022-10-20 11:05:58 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:05:59 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:06:06 AM - INFO: 当前时间为: 2022-10-20 11:06:06.089285, 股票名称：中远海特, 股票当前价格：7.8
+2022-10-20 11:06:25 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:06:25 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1217
+2022-10-20 11:06:32 AM - INFO: 当前时间为: 2022-10-20 11:06:32.592388, 股票名称：中远海特, 股票当前价格：7.78
+2022-10-20 11:06:42 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:06:43 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1217
+2022-10-20 11:06:50 AM - INFO: 当前时间为: 2022-10-20 11:06:50.187319, 股票名称：中远海特, 股票当前价格：7.78
+2022-10-20 11:07:22 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:07:22 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1217
+2022-10-20 11:07:29 AM - INFO: 当前时间为: 2022-10-20 11:07:29.836251, 股票名称：中远海特, 股票当前价格：7.75
+2022-10-20 11:07:36 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:07:37 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:09:44 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:09:44 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:09:51 AM - INFO: 当前时间为: 2022-10-20 11:09:51.819611, 股票名称：中远海特, 股票当前价格：7.78
+2022-10-20 11:09:54 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:09:55 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:10:02 AM - INFO: 当前时间为: 2022-10-20 11:10:02.359419, 股票名称：中远海特, 股票当前价格：7.78
+2022-10-20 11:13:08 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:13:08 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:13:15 AM - INFO: 当前时间为: 2022-10-20 11:13:15.868910, 股票名称：中远海特, 股票当前价格：7.76
+2022-10-20 11:13:25 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:13:26 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:13:33 AM - INFO: 当前时间为: 2022-10-20 11:13:33.304106, 股票名称：中远海特, 股票当前价格：7.76
+2022-10-20 11:13:39 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:13:39 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:13:46 AM - INFO: 当前时间为: 2022-10-20 11:13:46.717877, 股票名称：中远海特, 股票当前价格：7.76
+2022-10-20 11:13:58 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:13:59 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:14:05 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:14:05 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:14:12 AM - INFO: 当前时间为: 2022-10-20 11:14:12.809605, 股票名称：中远海特, 股票当前价格：7.73
+2022-10-20 11:14:24 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:14:25 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:14:32 AM - INFO: 当前时间为: 2022-10-20 11:14:32.377254, 股票名称：中远海特, 股票当前价格：7.73
+2022-10-20 11:14:43 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:14:43 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:14:50 AM - INFO: 当前时间为: 2022-10-20 11:14:50.843857, 股票名称：中远海特, 股票当前价格：7.71
+2022-10-20 11:15:01 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:15:02 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:15:16 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:15:17 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:15:24 AM - INFO: 当前时间为: 2022-10-20 11:15:24.999932, 股票名称：中远海特, 股票当前价格：7.71
+2022-10-20 11:15:37 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:15:37 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:15:44 AM - INFO: 当前时间为: 2022-10-20 11:15:44.571482, 股票名称：中远海特, 股票当前价格：7.71
+2022-10-20 11:15:53 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:15:54 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:18:24 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:18:25 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:18:32 AM - INFO: 当前时间为: 2022-10-20 11:18:32.039314, 股票名称：中远海特, 股票当前价格：7.68
+2022-10-20 11:18:43 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:18:43 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:18:50 AM - INFO: 当前时间为: 2022-10-20 11:18:50.549413, 股票名称：中远海特, 股票当前价格：7.69
+2022-10-20 11:19:36 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:19:37 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1217
+2022-10-20 11:19:47 AM - INFO: 当前时间为: 2022-10-20 11:19:47.332508, 股票名称：中远海特, 股票当前价格：7.7
+2022-10-20 11:20:55 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:20:56 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:21:06 AM - INFO: 当前时间为: 2022-10-20 11:21:06.538618, 股票名称：中远海特, 股票当前价格：7.71
+2022-10-20 11:21:15 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:21:16 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:22:10 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:22:11 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1216
+2022-10-20 11:22:21 AM - INFO: 当前时间为: 2022-10-20 11:22:21.226197, 股票名称：中远海特, 股票当前价格：7.71
+2022-10-20 11:22:33 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:22:33 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1216
+2022-10-20 11:22:41 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:22:41 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:22:43 AM - INFO: 当前时间为: 2022-10-20 11:22:43.845684, 股票名称：中远海特, 股票当前价格：7.72
+2022-10-20 11:22:46 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:22:46 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:22:51 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:22:51 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:22:51 AM - INFO: 当前时间为: 2022-10-20 11:22:51.837301, 股票名称：中远海特, 股票当前价格：7.75
+2022-10-20 11:22:56 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:22:56 AM - INFO: 当前时间为: 2022-10-20 11:22:56.869839, 股票名称：中远海特, 股票当前价格：7.76
+2022-10-20 11:22:57 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:23:01 AM - INFO: 当前时间为: 2022-10-20 11:23:01.842537, 股票名称：中远海特, 股票当前价格：7.76
+2022-10-20 11:23:01 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:23:02 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:23:04 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:23:05 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:23:07 AM - INFO: 当前时间为: 2022-10-20 11:23:07.322874, 股票名称：中远海特, 股票当前价格：7.75
+2022-10-20 11:23:11 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:23:11 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:23:12 AM - INFO: 当前时间为: 2022-10-20 11:23:12.313528, 股票名称：中远海特, 股票当前价格：7.77
+2022-10-20 11:23:12 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:23:13 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:23:15 AM - INFO: 当前时间为: 2022-10-20 11:23:15.281587, 股票名称：中远海特, 股票当前价格：7.76
+2022-10-20 11:23:21 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:23:21 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:23:21 AM - INFO: 当前时间为: 2022-10-20 11:23:21.818101, 股票名称：中远海特, 股票当前价格：7.76
+2022-10-20 11:23:23 AM - INFO: 当前时间为: 2022-10-20 11:23:23.325070, 股票名称：中远海特, 股票当前价格：7.76
+2022-10-20 11:23:29 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:23:29 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:23:31 AM - INFO: 当前时间为: 2022-10-20 11:23:31.803389, 股票名称：中远海特, 股票当前价格：7.77
+2022-10-20 11:23:34 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:23:35 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:23:36 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:23:37 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:23:37 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:23:37 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:23:39 AM - INFO: 当前时间为: 2022-10-20 11:23:39.874797, 股票名称：中远海特, 股票当前价格：7.77
+2022-10-20 11:23:45 AM - INFO: 当前时间为: 2022-10-20 11:23:45.288314, 股票名称：中远海特, 股票当前价格：7.77
+2022-10-20 11:23:45 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:23:46 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:23:47 AM - INFO: 当前时间为: 2022-10-20 11:23:47.443549, 股票名称：中远海特, 股票当前价格：7.77
+2022-10-20 11:23:47 AM - INFO: 当前时间为: 2022-10-20 11:23:47.918278, 股票名称：中远海特, 股票当前价格：7.77
+2022-10-20 11:23:51 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:23:51 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:23:54 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:23:55 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:23:56 AM - INFO: 当前时间为: 2022-10-20 11:23:56.596064, 股票名称：中远海特, 股票当前价格：7.77
+2022-10-20 11:24:01 AM - INFO: 当前时间为: 2022-10-20 11:24:01.962708, 股票名称：中远海特, 股票当前价格：7.77
+2022-10-20 11:24:02 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:24:03 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:24:03 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:24:04 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:24:05 AM - INFO: 当前时间为: 2022-10-20 11:24:05.033493, 股票名称：中远海特, 股票当前价格：7.76
+2022-10-20 11:24:52 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:24:53 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:25:03 AM - INFO: 当前时间为: 2022-10-20 11:25:03.079333, 股票名称：中远海特, 股票当前价格：7.72
+2022-10-20 11:25:17 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:25:17 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:25:53 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:25:53 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:26:03 AM - INFO: 当前时间为: 2022-10-20 11:26:03.579362, 股票名称：中远海特, 股票当前价格：7.7
+2022-10-20 11:26:11 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:26:12 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:41:18 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:41:19 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:41:29 AM - INFO: 当前时间为: 2022-10-20 11:41:29.140534, 股票名称：中远海特, 股票当前价格：7.75
+2022-10-20 11:41:36 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:41:36 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:42:28 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:42:29 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:42:39 AM - INFO: 当前时间为: 2022-10-20 11:42:39.082428, 股票名称：中远海特, 股票当前价格：7.75
+2022-10-20 11:45:42 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:45:42 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1219
+2022-10-20 11:45:52 AM - INFO: 当前时间为: 2022-10-20 11:45:52.586541, 股票名称：中远海特, 股票当前价格：7.75
+2022-10-20 11:46:11 AM - DEBUG: Starting new HTTPS connection (1): finance.pae.baidu.com:443
+2022-10-20 11:46:12 AM - DEBUG: https://finance.pae.baidu.com:443 "GET /selfselect/sug?wd=%E4%B8%AD%E8%BF%9C%E6%B5%B7%E7%89%B9&skip_login=1&finClientType=pc HTTP/1.1" 200 1218
+2022-10-20 11:46:22 AM - INFO: 当前时间为: 2022-10-20 11:46:22.099769, 股票名称：中远海特, 股票当前价格：7.75

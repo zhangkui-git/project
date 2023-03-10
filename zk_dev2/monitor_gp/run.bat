@@ -1,0 +1,1 @@
+python D:\work_soft\python\project\zk_dev2\monitor_gp\monitor_gp.py 中远海特 9 11 文件传输
