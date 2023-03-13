@@ -26,11 +26,22 @@
 # if __name__ == '__main__':
 #     write_file
 
-import requests
-res = requests.post('https://www.cnblogs.com/zhengyihan1216/p/11549820.html', verify=False)
-# res.encoding = res.apparent_encoding
-print(res.content.decode('utf-8'))
-print(res.text)
+# import requests
+# res = requests.post('https://www.cnblogs.com/zhengyihan1216/p/11549820.html', verify=False)
+# # res.encoding = res.apparent_encoding
+# print(res.content.decode('utf-8'))
+# print(res.text)
+
+
+from fake_useragent import UserAgent
+
+ua = UserAgent()
+
+print(ua.ie)
+print(ua.firefox)
+
+
+
 
 
 
