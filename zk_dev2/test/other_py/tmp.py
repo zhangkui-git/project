@@ -34,11 +34,20 @@
 
 
 from fake_useragent import UserAgent
+import requests
+from bs4 import BeautifulSoup as bs
+from urllib import request
 
 ua = UserAgent()
+header = {'User-Agent': f'{ua.chrome}'}
+url = 'http://www.1ppt.com/plus/download.php?open=0&aid=103166&cid=3'
 
-print(ua.ie)
-print(ua.firefox)
+res = requests.get(url=url, headers=header)
+res.encoding = res.apparent_encoding
+r_html = res.text
+soup5 = bs(r_html, "html.parser")
+# print(r_html)
+print(r_html)
 
 
 
