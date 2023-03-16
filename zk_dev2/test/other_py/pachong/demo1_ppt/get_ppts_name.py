@@ -24,7 +24,7 @@ def write_file(str1):
 def get_pages_ppts_url():
     count = 1
     ppts_http_list = {}
-    res = requests.post(url=url, headers=header)
+    res = requests.post(url=url, headers=header, verify=False)
     res.encoding = res.apparent_encoding
     res_html = res.text
     soup = bs(res_html, "html.parser")
@@ -40,7 +40,7 @@ def get_pages_ppts_url():
     # 开始获取ppt列表中的ppt类型
     ppts1_http_list = {}
     for i in ppts_http_list:
-        res1 = requests.post(url=ppts_http_list[i], headers=header)
+        res1 = requests.post(url=ppts_http_list[i], headers=header, verify=False)
         res1.encoding = res1.apparent_encoding
         res1_html = res1.text
         soup1 = bs(res1_html, "html.parser")
@@ -57,7 +57,7 @@ def get_pages_ppts_url():
         tmp_ppts2_http_list = {}
         for k in ppts1_http_list[h]:
             tmp_res2 = []
-            res2 = requests.post(url=ppts1_http_list[h][k], headers=header)
+            res2 = requests.post(url=ppts1_http_list[h][k], headers=header, verify=False)
             res2.encoding = res2.apparent_encoding
             res2_html = res2.text
             soup2 = bs(res2_html, "html.parser")
@@ -82,7 +82,7 @@ def get_pages_down_zip():
         for h in ppts2_http_list[l]:
             tmp_res3 = []
             for a in ppts2_http_list[l][h]:
-                res3 = requests.post(url=a, headers=header)
+                res3 = requests.post(url=a, headers=header, verify=False)
                 res3.encoding = res3.apparent_encoding
                 res3_html = res3.text
                 soup3 = bs(res3_html, "html.parser")
@@ -91,6 +91,7 @@ def get_pages_down_zip():
                     tmp_res3.append(url + b.a['href'])
             tmp_ppts3_http_list[h] = tmp_res3
         ppts3_http_list[l] = tmp_ppts3_http_list
+    print(3333, ppts3_http_list)
     logging.info('--------------ppts3_http_list 写入字典完成-------------')
     ppts4_http_list = {}
     for c in ppts3_http_list:
@@ -98,7 +99,7 @@ def get_pages_down_zip():
         for d in ppts3_http_list[c]:
             tmp_res4 = []
             for e in ppts3_http_list[c][d]:
-                res4 = requests.post(url=e, headers=header)
+                res4 = requests.post(url=e, headers=header, verify=False)
                 res4.encoding = res4.apparent_encoding
                 res4_html = res4.text
                 soup4 = bs(res4_html, "html.parser")
@@ -108,10 +109,14 @@ def get_pages_down_zip():
                 tmp_res4.append(url + li_5[0].a['href'])
             tmp_ppts4_http_list[d] = tmp_res4
         ppts4_http_list[c] = tmp_ppts4_http_list
-    print(ppts4_http_list)
+    print(44444, ppts4_http_list)
     logging.info('--------------ppts4_http_list 写入字典完成-------------')
     logging.info(f'ppts4_http_list字典：{ppts4_http_list}')
-    write_file(ppts4_http_list)
+    try:
+        write_file(str(ppts4_http_list))
+    except OSError as reason:
+        print(reason)
+        logging.info(f'写入文件异常：{reason}')
     logging.info('--------------写入文件完成-------------')
     logging.info('--------------爬虫结束-------------')
 
@@ -123,6 +128,7 @@ if __name__ == '__main__':
     # write_file('111111111')
     stop_time = datetime.datetime.now()
     print("运行时间：", stop_time - start_time)
+    logging.info(f'------------运行时间：{stop_time - start_time}-------------')
 
 
 
