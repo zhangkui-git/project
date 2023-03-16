@@ -1,0 +1,36 @@
+2022-12-23 09:30:16,385 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:30:16,388 auto_dev_imp INFO 登录结果返回2：[200, '操作成功']
+2022-12-23 09:30:16,550 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:30:16,721 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:30:16,722 auto_dev_imp INFO 登陆成功，日志源管理-列表上方-新增的url是：https://192.168.4.154:8440/log/source/add
+2022-12-23 09:30:17,700 auto_dev_imp INFO 添加日志源返回：{'status': True, 'statusCode': 200, 'message': '操作成功', 'reason': None, 'data': '', 'failKey': '', 'param': None, 'failKeyEnum': 'SUCCESS'}
+2022-12-23 09:30:17,919 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:30:17,921 auto_dev_imp INFO 登陆成功，日志源管理-列表上方-删除的url是：https://192.168.4.154:8440/log/source/delete/batch
+2022-12-23 09:30:23,462 auto_dev_imp INFO 删除日志源返回：{'status': False, 'statusCode': 1017, 'message': '操作失败', 'reason': None, 'data': '', 'failKey': '', 'param': None, 'failKeyEnum': 'SUCCESS'}
+2022-12-23 09:30:23,767 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:30:23,769 auto_dev_imp INFO 登陆成功，范化-列表上方删除功能的url是：https://192.168.4.154:8440/normalize/delete/batch
+2022-12-23 09:30:24,879 auto_dev_imp INFO 返回结果---：{'status': True, 'statusCode': 200, 'message': '1条数据删除成功！', 'reason': None, 'data': '', 'failKey': '', 'param': None, 'failKeyEnum': 'SUCCESS'}
+2022-12-23 09:35:23,657 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:35:23,669 auto_dev_imp INFO 登录结果返回2：[200, '操作成功']
+2022-12-23 09:35:23,849 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:35:24,043 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:35:24,044 auto_dev_imp INFO 登陆成功，日志源管理-列表上方-新增的url是：https://192.168.4.154:8440/log/source/add
+2022-12-23 09:35:24,292 auto_dev_imp INFO 添加日志源返回：{'status': True, 'statusCode': 200, 'message': '操作成功', 'reason': None, 'data': '', 'failKey': '', 'param': None, 'failKeyEnum': 'SUCCESS'}
+2022-12-23 09:35:24,449 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:35:24,449 auto_dev_imp INFO 登陆成功，日志源管理-列表上方-删除的url是：https://192.168.4.154:8440/log/source/delete/batch
+2022-12-23 09:35:25,696 auto_dev_imp INFO 删除日志源返回：{'status': True, 'statusCode': 200, 'message': '操作成功', 'reason': None, 'data': '', 'failKey': '', 'param': None, 'failKeyEnum': 'SUCCESS'}
+2022-12-23 09:35:25,874 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:35:25,874 auto_dev_imp INFO 登陆成功，范化-列表上方删除功能的url是：https://192.168.4.154:8440/normalize/delete/batch
+2022-12-23 09:35:25,964 auto_dev_imp INFO 返回结果---：{'status': True, 'statusCode': 200, 'message': '1条数据删除成功！', 'reason': None, 'data': '', 'failKey': '', 'param': None, 'failKeyEnum': 'SUCCESS'}
+2022-12-23 09:37:41,587 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:37:41,588 auto_dev_imp INFO 登录结果返回2：[200, '操作成功']
+2022-12-23 09:37:41,805 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:37:42,703 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:37:42,703 auto_dev_imp INFO 登陆成功，日志源管理-列表上方-新增的url是：https://192.168.4.154:8440/log/source/add
+2022-12-23 09:37:42,957 auto_dev_imp INFO 添加日志源返回：{'status': True, 'statusCode': 200, 'message': '操作成功', 'reason': None, 'data': '', 'failKey': '', 'param': None, 'failKeyEnum': 'SUCCESS'}
+2022-12-23 09:37:43,244 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:37:43,245 auto_dev_imp INFO 登陆成功，日志源管理-列表上方-删除的url是：https://192.168.4.154:8440/log/source/delete/batch
+2022-12-23 09:37:43,719 auto_dev_imp INFO 删除日志源返回：{'status': True, 'statusCode': 200, 'message': '操作成功', 'reason': None, 'data': '', 'failKey': '', 'param': None, 'failKeyEnum': 'SUCCESS'}
+2022-12-23 09:37:43,907 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2022-12-23 09:37:43,907 auto_dev_imp INFO 登陆成功，范化-列表上方删除功能的url是：https://192.168.4.154:8440/normalize/delete/batch
+2022-12-23 09:37:44,029 auto_dev_imp INFO 返回结果---：{'status': True, 'statusCode': 200, 'message': '1条数据删除成功！', 'reason': None, 'data': '', 'failKey': '', 'param': None, 'failKeyEnum': 'SUCCESS'}

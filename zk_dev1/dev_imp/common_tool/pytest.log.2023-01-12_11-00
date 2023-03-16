@@ -1,0 +1,20 @@
+2023-01-12 10:59:19,381 auto_dev_imp INFO 登录成功1：[-1, '']
+2023-01-12 10:59:19,642 auto_dev_imp INFO 登录成功1：[-1, '']
+2023-01-12 10:59:19,674 auto_dev_imp INFO 登录成功1：[-1, '']
+2023-01-12 10:59:19,710 auto_dev_imp INFO 登录成功1：[-1, '']
+2023-01-12 10:59:19,738 auto_dev_imp INFO 登录成功1：[-1, '']
+2023-01-12 11:00:26,977 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2023-01-12 11:00:26,979 auto_dev_imp INFO 登录结果返回2：[200, '操作成功']
+2023-01-12 11:00:27,082 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2023-01-12 11:00:27,243 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2023-01-12 11:00:27,243 auto_dev_imp INFO 登陆成功，日志源管理-列表上方-新增的url是：https://192.168.100.159:8440/log/source/add
+2023-01-12 11:00:27,434 auto_dev_imp INFO 添加日志源返回：{'status': True, 'statusCode': 200, 'message': '操作成功', 'reason': None, 'data': '', 'failKey': 'SUCCESS', 'param': None}
+2023-01-12 11:00:27,515 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2023-01-12 11:00:27,515 auto_dev_imp INFO 登陆成功，日志源管理-列表上方-删除的url是：https://192.168.100.159:8440/log/source/delete/batch
+2023-01-12 11:00:27,755 auto_dev_imp INFO 删除日志源返回：{'status': True, 'statusCode': 200, 'message': '操作成功', 'reason': None, 'data': '', 'failKey': 'SUCCESS', 'param': None}
+2023-01-12 11:00:27,876 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2023-01-12 11:00:27,876 auto_dev_imp INFO 登陆成功，策略配置-范化-复制新策略url是：https://192.168.100.159:8440/normalize/copy
+2023-01-12 11:00:27,960 auto_dev_imp INFO 复制范化规则返回：{'status': True, 'statusCode': 200, 'message': '操作成功', 'reason': None, 'data': '', 'failKey': 'SUCCESS', 'param': None}
+2023-01-12 11:00:28,057 auto_dev_imp INFO 登录成功1：[200, '操作成功']
+2023-01-12 11:00:28,057 auto_dev_imp INFO 登陆成功，范化-列表上方删除功能的url是：https://192.168.100.159:8440/normalize/delete/batch
+2023-01-12 11:00:28,137 auto_dev_imp INFO 返回结果---：{'status': True, 'statusCode': 200, 'message': '1条数据删除成功！', 'reason': None, 'data': '', 'failKey': 'SUCCESS', 'param': None}
