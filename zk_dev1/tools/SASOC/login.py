@@ -4,8 +4,8 @@ from conf import *
 
 def login(user_body):
     url = f"{host}/login/userLogin"
-    headers = {"Content-Type": "application/json"}
-    # body = list_data[num]
+    # headers = {"Content-Type": "application/json", "User-Agent": f'{ua.chrome}'}
+    headers = {"Content-Type": "application/json", "User-Agent": ua1}
     body = user_body
     res = requests.post(url=url, headers=headers, json=body, verify=False)
     print("======操作结果是======", f"{res.json()}")

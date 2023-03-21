@@ -2,12 +2,14 @@ import time
 import requests
 from login import *
 
+
 token = many_token()
 
 
 def add_assert(token, num):
     add_tuopu_url = f"{host}/topology/personal/save"
-    add_tuopu_header = {"Content-Type": "application/json;charset=UTF-8", "Authorization": f'{token}'}
+    # add_tuopu_header = {"Content-Type": "application/json;charset=UTF-8", "Authorization": f'{token}', "User-Agent": f'{ua.chrome}'}
+    add_tuopu_header = {"Content-Type": "application/json;charset=UTF-8", "Authorization": f'{token}', "User-Agent": ua1}
     add_tuopu_body = {
   "topoData": {
     "version": "2.0",
@@ -2261,7 +2263,7 @@ def add_assert(token, num):
 
 
 if __name__ == '__main__':
-    num = 3
+    num = 4
     add_assert(token[0], num)
     # while num <= 30:
     #     add_assert(token[0], num)
