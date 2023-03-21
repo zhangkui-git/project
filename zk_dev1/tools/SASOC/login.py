@@ -1,4 +1,4 @@
-from zk_dev2.test.many_login.encry_decry import *
+from zk_dev1.tools.SASOC.encry_decry import *
 from conf import *
 
 

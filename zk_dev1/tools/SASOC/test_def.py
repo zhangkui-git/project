@@ -1,6 +1,4 @@
 import threading
-from zk_dev2.test.many_login.login import *
-import time
 from add_assert import *
 
 
