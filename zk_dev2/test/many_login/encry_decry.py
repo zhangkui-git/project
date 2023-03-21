@@ -15,10 +15,11 @@ from Crypto.Signature import PKCS1_v1_5 as PKCS1_signature
 from Crypto.Cipher import PKCS1_v1_5 as PKCS1_cipher, AES
 from Crypto.PublicKey import RSA
 DIR_NAME = os.getcwd()
+from conf import *
 
 
-IP = "192.168.100.248"  # 服务器地址
-host = f"https://{IP}:8440"
+IP = ip  # 服务器地址
+host = host
 
 def md5(str):
     return hashlib.md5(str.encode('UTF-8')).hexdigest()

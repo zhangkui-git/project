@@ -37,47 +37,51 @@ from fake_useragent import UserAgent
 import requests
 from bs4 import BeautifulSoup as bs
 import urllib.request
-
-from io import StringIO
+import time
+import re
 import gzip
+import urllib.request
+from bs4 import BeautifulSoup
+from io import StringIO, BytesIO
+
+
 
 
 ua = UserAgent()
 header = {'User-Agent': f'{ua.chrome}'}
-# header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'}
-url = 'http://www.1ppt.com/plus/download.php?open=0&aid=103166&cid=3'
+url = 'https://www.1ppt.com/plus/download.php?open=0&aid=103166&cid=3'
+# url = 'https://www.baidu.com/'
 
-res = requests.get(url=url, headers=header)
+res = requests.get(url=url, headers=header, verify=False)
 res.encoding = res.apparent_encoding
 r_html = res.text
 soup5 = bs(r_html, "html.parser")
-# print(res.status_code)
-# print(r_html)
+print(res.status_code)
+print(r_html)
 
 
 
 
-response1 = urllib.request.urlopen(url=url)
+# response1 = urllib.request.urlopen(url=url)
 # print(response1.info().get('Content-Encoding'))
 # print(response1.read())
 # if response1.info().get('Content-Encoding') == 'gzip':
-#     buf = StringIO(response1.read())
+#     print(333)
+#     # buf = StringIO(str(response1.read()))
+#     buf = BytesIO(response1.read())
+#     print(4444)
+#     # buf = StringIO(response1.read())
+#     # print(9999)
 #     f = gzip.GzipFile(fileobj=buf)
+#     print(555, type(f))
 #     data = f.read()
 #     print(data)
+#     print(66666)
 #     # 处理
 #     f.close()
 # else:
-#     data = response1.read()
+#     data = str(response1.read())
 
 
-# urlopen()向URL发请求,返回响应对象
-response = urllib.request.urlopen('http://www.baidu.com/')
-# 提取响应内容
-html = response.read().decode('utf-8')
-# 打印响应内容
-# print(html)
 
-a = {'b': 'zhang'}
-print(str(a))
 

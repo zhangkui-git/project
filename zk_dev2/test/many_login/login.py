@@ -1,8 +1,9 @@
 from zk_dev2.test.many_login.encry_decry import *
+from conf import *
 
 
 def login(user_body):
-    url = "https://192.168.100.248:8440/login/userLogin"
+    url = f"{host}/login/userLogin"
     headers = {"Content-Type": "application/json"}
     # body = list_data[num]
     body = user_body
@@ -17,11 +18,11 @@ def login(user_body):
 def many_token():
     generate_public_rsa()
     # user_list = [21, 11]
-    user_list = ['operator']
+    user_list = users
     data_list = []
     for i, name in enumerate(user_list):
         user = RsaEncrypt('public_key.keystore').encrypt_data(user_list[0])
-        pas = RsaEncrypt('public_key.keystore').encrypt_data('wnt8000LLy&y')
+        pas = RsaEncrypt('public_key.keystore').encrypt_data(f'{pwd}')
         data = {"userName": user, "userPassword": pas}
         print(f"用户名：op{name}----登录成功", data)
         data_list.append(login(data))
