@@ -43,28 +43,69 @@ import gzip
 import urllib.request
 from bs4 import BeautifulSoup
 from io import StringIO, BytesIO
-
-
-
+from lxml import etree
+import os
 
 ua = UserAgent()
-header = {'User-Agent': f'{ua.chrome}'}
+# header = {'User-Agent': f'{ua.chrome}', 'Cookie': 'acw_tc=2760779916794751608163076ee5aaa98ebf6109750844345fa69a1bd55895; acw_sc__v2=641ac1d86ef74858c95d120d4bd93e8839074eae'}
+header = {'User-Agent': f'{ua.firefox}'}
 url = 'https://www.1ppt.com/plus/download.php?open=0&aid=103166&cid=3'
-# url = 'https://www.baidu.com/'
-
-res = requests.get(url=url, headers=header, verify=False)
+# url = 'http://www.1ppt.com/article/103166.html'
+res = requests.post(url=url, headers=header, verify=False)
+# res = requests.post(url=url, headers=header)
 res.encoding = res.apparent_encoding
 r_html = res.text
-soup5 = bs(r_html, "html.parser")
-print(res.status_code)
+# r_html = gzip.decompress(bytes(r_html)).decode('utf-8')
+# soup5 = bs(r_html, "html.parser")
+# soup5 = bs(r_html, 'lxml')
 print(r_html)
+
+
+# url1 = 'https://ppt.1ppt.com/uploads/soft/1907/1-1ZGR05445.zip'
+# header = {'User-Agent': f'{ua.firefox}'}
+#
+#
+# def downloadfile(url, filename=None):
+#   if(not filename):                         # 如果参数没有指定文件名
+#     filename = os.path.basename(url)          # 取用url的尾巴为文件名
+#   leng = 1
+#   while(leng==1):
+#     torrent = requests.get(url, headers=header)
+#     leng = len(list(torrent.iter_content(1024)))  # 下载区块数
+#     if(leng == 1):                                # 如果是1 就是空文件 重新下载
+#       print(filename,'下载失败,重新下载')
+#       time.sleep(1)
+#     else:
+#       print('下载完成')
+#   with open(filename, 'wb') as f:
+#     for chunk in torrent.iter_content(1024):    # 防止文件过大，以1024为单位一段段写入
+#       f.write(chunk)
+#
+#
+# if __name__ == '__main__':
+#     downloadfile(url1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 # response1 = urllib.request.urlopen(url=url)
-# print(response1.info().get('Content-Encoding'))
-# print(response1.read())
+# print(33333, response1.info().get('Content-Encoding'))
+# # print(response1.read())
 # if response1.info().get('Content-Encoding') == 'gzip':
 #     print(333)
 #     # buf = StringIO(str(response1.read()))
@@ -81,7 +122,4 @@ print(r_html)
 #     f.close()
 # else:
 #     data = str(response1.read())
-
-
-
 
