@@ -53,7 +53,7 @@ try:
     info1 = ''
     for line in lines:
         info1 = info1 + line
-    print("line=", info1)
+    print("line=1", info1)
 finally:
     file_object2.close()
 
