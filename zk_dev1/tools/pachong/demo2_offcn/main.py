@@ -19,7 +19,6 @@ def read2txt():
 
 
 if __name__ == '__main__':
-    os.remove('./tmp_info.txt')
     get2txt()
     # read2txt()
     sendmail(read2txt())
