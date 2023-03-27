@@ -10,7 +10,7 @@ mail_user = "kui.zhang@winicssec.com"  # 用户名
 mail_pass = "zbYhpA53QmArUdGZ"  # 口令
 
 sender = "kui.zhang@winicssec.com"
-receivers = ['kui.zhang@winicssec.com']  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
+receivers = ['kui.zhang@winicssec.com', 'zkuuuuuu@163.com']  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
 
 
 def sendmail(txt1):

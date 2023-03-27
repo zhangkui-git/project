@@ -132,7 +132,7 @@ def open_fire(IP):
     # 取消安全认证
     s.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     # 连接linux
-    s.connect(hostname=IP, username='root', password='Wnt.1@34568')
+    s.connect(hostname=IP, username='root', password='Wnt.1@3456')
     s.exec_command('systemctl start firewalld')   # 执行结束后，打开防火墙
     time.sleep(1)
 
