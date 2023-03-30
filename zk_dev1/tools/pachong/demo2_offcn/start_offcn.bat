@@ -1,1 +1,1 @@
-D:\work_soft\python2021\project\venv\Scripts\python D:\work_soft\python2021\project\zk_dev1\tools\pachong\demo2_offcn\main.py
+python D:\work_soft\python2021\project\zk_dev1\tools\pachong\demo2_offcn\main.py

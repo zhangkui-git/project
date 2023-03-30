@@ -1,14 +1,15 @@
 from scapy.all import *
 
-packet = rdpcap("IEC104.pcap")  #读取pcap文件
+packet = rdpcap("1.pcap")  #读取pcap文件
 
 New_Packet = []    #创建一个新的对象
 ii = 0
 for pkt in packet:
 
-    if pkt['IP'].src == "5.5.5.5":
-        pkt['IP'].src = "70.0.0.1"
-        pkt['IP'].dst = "163.1.1.1"
+    if pkt['IP'].src == "10.250.73.13":
+        # pkt['IP'].src = "70.0.0.1"
+        # pkt['IP'].dst = "163.1.1.1"
+        pkt['port'].src = 34926
         # pkt['Ether'].src = "20:47:47:95:93:90"
         # pkt['Ether'].dst = "d0:c5:d3:ed:62:15"
     # else:
@@ -27,4 +28,4 @@ for pkt in packet:
     ii += 1
 
 
-wrpcap("IEC104_1.pcap", New_Packet)    #生成新的pcap
+wrpcap("1_new.pcap", New_Packet)    #生成新的pcap
