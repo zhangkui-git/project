@@ -227,6 +227,32 @@ print(d)
 
 
 
+# 双指针计算列表里面两个数值差值是固定值的数据组
+nums = [0, 1, 4, 6, 7, 10]
+diff = 3
+
+
+def findPairs(nums, k):
+    if len(nums) < 2:
+        return 0
+    # nums.sort()
+    idx1 = 0
+    idx2 = 1
+    # ans = set()
+    ans = []
+    while idx1 < len(nums) - 1 and idx2 <= len(nums) - 1:
+        if idx1 == idx2:
+            idx2 += 1
+        s = nums[idx2] - nums[idx1]
+        if s > k:
+            idx1 += 1
+        elif s < k:
+            idx2 += 1
+        else:
+            ans.append((nums[idx1], nums[idx2]))
+            idx1 += 1
+    print(ans)
+    return len(ans)
 
 
 
