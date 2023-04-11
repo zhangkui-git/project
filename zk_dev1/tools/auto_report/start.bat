@@ -1,1 +1,1 @@
-python common/main_laa.py 192.168.4.106 111111 192.168.4.106 Wnt.1@3456 elastic changeme 1 32G 500
+python common/main_put.py 192.168.100.36 10 3 100

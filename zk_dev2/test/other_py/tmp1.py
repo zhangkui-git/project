@@ -1,9 +1,10 @@
 
 # print(str(datetime.datetime.now())[:11])
 
-print(264 - 92)
+root = [1, null, 2, 3]
 
-print(127 + 44 + 1 + 0)
+for i in root:
+    print(i)
 
 
 
