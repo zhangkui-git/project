@@ -8,7 +8,7 @@ import time
 import os
 import requests
 import urllib3
-from config import host, admin, operator, password, role_name, user_name, password_new
+from config import host, admin, operator, password, role_name, user_name, password_new, sys_pas
 from encry_decry import RsaEncrypt
 from encry_decry import generate_public_rsa
 from add_admin import *
@@ -132,7 +132,7 @@ def open_fire(IP):
     # 取消安全认证
     s.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     # 连接linux
-    s.connect(hostname=IP, username='root', password='Wnt.1@3456')
+    s.connect(hostname=IP, username='root', password=sys_pas)
     s.exec_command('systemctl start firewalld')   # 执行结束后，打开防火墙
     time.sleep(1)
 

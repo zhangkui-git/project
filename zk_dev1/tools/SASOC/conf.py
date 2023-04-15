@@ -1,7 +1,7 @@
 from fake_useragent import UserAgent
 ua = UserAgent()
 
-ip = '192.168.100.149'
+ip = '192.168.4.153'
 host = f'https://{ip}:8440'
 
 users = ['operator_zk1']

@@ -155,16 +155,16 @@ if __name__ == '__main__':
     print(generate_public_rsa())
     # user_list = ['zlm', 'whl', 'zt', 'zk']
     # user_list = [11, 12]
-    user_list = [21]
+    user_list = ['erator_zk1']
     token = []
     for i in user_list:
-        user = RsaEncrypt('public_key.keystore').encrypt_data(f'op{i}')
-        pas = RsaEncrypt('public_key.keystore').encrypt_data('Admin@123456')
+        user = RsaEncrypt('../python_sendsyslog/public_key.keystore').encrypt_data(f'op{i}')
+        pas = RsaEncrypt('../python_sendsyslog/public_key.keystore').encrypt_data('Admin@123456')
         data = {"userName": user, "userPassword": pas}
         print(data)
         token.append(data)
     print(token)
-    res = requests.post(url='https://192.168.100.159:8440/login/userLogin', json=token[0], verify=False)
+    res = requests.post(url='https://192.168.4.153:8440/login/userLogin', json=token[0], verify=False)
     result =json.loads(res.text)
     print(f'登录结果', result)
 

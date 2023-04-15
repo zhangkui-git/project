@@ -21,10 +21,10 @@ def many_token():
     user_list = users
     data_list = []
     for i, name in enumerate(user_list):
-        user = RsaEncrypt('public_key.keystore').encrypt_data(user_list[0])
-        pas = RsaEncrypt('public_key.keystore').encrypt_data(f'{pwd}')
+        user = RsaEncrypt('./public_key.keystore').encrypt_data(user_list[i])
+        pas = RsaEncrypt('./public_key.keystore').encrypt_data(f'{pwd}')
         data = {"userName": user, "userPassword": pas}
-        print(f"用户名：op{name}----登录成功", data)
+        print(f"用户名：{name}----登录成功", data)
         data_list.append(login(data))
     print(data_list)
     return data_list

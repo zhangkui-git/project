@@ -426,3 +426,14 @@
 #
 # p = Solution()
 # print(p.totalMoney(26))
+
+# 识别图片
+# from fake_useragent import UserAgent
+# import pytesseract
+# from PIL import Image
+# ua = UserAgent()
+# pytesseract.pytesseract.tesseract_cmd = 'D:/work_soft/python2021/trect/tesseract.exe'
+# img = Image.open('C:/Users/DELL/Desktop/gif/test1.jpg')
+# # text = pytesseract.image_to_string(img, lang='chi_sim')
+# text = pytesseract.image_to_string(img)
+# print(text, 111)

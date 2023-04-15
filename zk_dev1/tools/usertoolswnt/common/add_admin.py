@@ -4,7 +4,7 @@
 # @Author : 卫运腾
 import paramiko
 import pymysql
-from config import IP
+from config import IP, sys_pas
 
 def get_conn():
     '''目前只将IP进行了参数化，'''
@@ -26,7 +26,7 @@ def update(sql):
 
 
 
-def con_linux(hostname=IP, username='root', psd='Wnt.1@3456', sql=''):
+def con_linux(hostname=IP, username='root', psd=sys_pas, sql=''):
     s = paramiko.SSHClient()
     #取消安全认证
     s.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -65,7 +65,7 @@ def con_linux(hostname=IP, username='root', psd='Wnt.1@3456', sql=''):
 
 if __name__ == '__main__':
 
-    print(con_linux('192.168.100.63', 'root', 'Wnt.1@3456'))
+    print(con_linux('192.168.100.63', 'root', sys_pas))
 
 
 

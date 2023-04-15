@@ -2265,7 +2265,7 @@ def add_assert(token, num):
 if __name__ == '__main__':
     num = 1
     # add_assert(token[0], num)
-    while num <= 30:
+    while num <= 22:
         add_assert(token[0], num)
         num += 1
 

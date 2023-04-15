@@ -5,8 +5,9 @@ datetime:2022/3/11 12:19
 software: PyCharm
 '''
 
-IP = "192.168.100.149"  # 服务器地址
+IP = "192.168.100.26"  # 服务器地址
 host = f"https://{IP}:8440"
+sys_pas = 'Wnt123456'
 admin = 'admin' #初始用户名
 operator = 'operator'  #默认operator用户名
 password = 'wnt8000LLy&y'  # 默认账号的密码
