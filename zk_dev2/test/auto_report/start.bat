@@ -1,1 +1,1 @@
-python common/main_put.py 192.168.4.165 100 1 1
+python common/main_put.py 192.168.100.149 20 3 10000000000
