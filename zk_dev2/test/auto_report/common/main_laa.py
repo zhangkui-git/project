@@ -120,7 +120,7 @@ def put_udp():
 
 if __name__ == '__main__':
     local_file_dir = os.getcwd()
-    log_file = 'new_V2R1_7.txt'
+    log_file = 'no_network_V2R1_7.txt'
     log_start_info = "=" * 8 + "start:" + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + "=" * 8
     logging.info(log_start_info)
     timing = time1 * 3600

@@ -103,7 +103,7 @@ def sendmail(product, version, host, mem, time1, speed, py_send_sum, sys_sum, es
         logging.info("Error: 无法发送邮件")
         print("Error: 无法发送邮件")
 
-#
+
 # if __name__ == '__main__':
 #     product = "日志审计与分析系统"
 #     version = 'V100R007C01B070'

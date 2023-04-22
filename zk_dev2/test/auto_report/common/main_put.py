@@ -90,7 +90,7 @@ def put_udp():
 
 if __name__ == '__main__':
     local_file_dir = os.getcwd()
-    log_file = 'new_V2R1_7.txt'
+    log_file = 'V2R1_7.txt'
     host = sys.argv[1]
     speed = int(sys.argv[2])
     timing = int(sys.argv[3]) * 3600

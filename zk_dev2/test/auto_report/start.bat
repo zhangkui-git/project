@@ -1,1 +1,1 @@
-python common/main_put.py 192.168.100.149 20 3 10000000000
+python common/main_isa.py 统一安全管理平台 V200R007C02B031 192.168.4.107 Wnt.1@3456 elastic changeme 24 16G 4100
