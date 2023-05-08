@@ -1,19 +1,38 @@
+import requests
 
-# print(str(datetime.datetime.now())[:11])
+url = "https://192.168.4.107:8440/userpermission/usermanage/getAllUserInfo"
+header = {"Content-Type": "application/json;charset=UTF-8", "Connection": "keep-alive", "Authorization": "0dd6503580ff0ae060525a745587832f2b2c3f86ceb5f6a228e468b3a4397806174ed6e9df276dcbdc2c11071cd64e67e8cbc4bebc5aa66490577abff7a8c8e1fb8c67f311f2ba725e94b433cbcf46ea90e1bea2b214f074f532837c04281ec19d1bd88805f5c309443eab883fe9cef28f3757db761b73d92054eed4cf9f6fcb9f5f094c93ae6373c1a81cc5e541003f4759019faf2397d5d479a72e41e18409e7c303524b7b39689ccd64cbb915e74b0a724768d53d08245d931ed79c6d501507072b39d42d2c7934272db76203f28d458c194ab55d4b74a196eb77761c521692a0a5836eb36e2c989daf6594d9bc927047ffe537c0f59ce8a27ac0221cd094c9a8983630d12e724c54bf0dbe99de0fd65bf077926d80a1"}
+body = {"keywords": "admin", "startPage": 1, "pageSize": 20, "order": ""}
 
-a = [1, 2, 3, 4, 5]
-print(a[:])
-print(a[::])
-print(a[3:])
-print(a[:3])
-print(a[::2])
+res = requests.post(url=url, headers=header, json=body, verify=False)
 
-from elasticsearch import Elasticsearch
+print(res.json())
 
-es = Elasticsearch("http://192.168.4.153:9200", http_auth=('elastic', 'changeme'), timeout=20)
-data = {"factory_id":3,"create_time":"2023-04-21T12:05:01.000+08:00","alarm_type":10000000,"alarm_primary_message":"platform微服务组件异常","safe_device_ip":"192.168.4.153","effected_desc":"platform微服务组件发生异常，导致系统无法访问","warm_suggest":"platform微服务组件发生异常，请及时排查","alarm_level":2,"merge_count":1,"alarm_start_time":"2023-04-21T12:05:01.000+08:00","action_status":1}
-result = es.create(index='soc_alarm_info_20230421000000',id='zhangkui_2', body=data)
-print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -5,7 +5,7 @@ datetime:2022/3/11 12:19
 software: PyCharm
 '''
 
-IP = "192.168.4.153"  # 服务器地址
+IP = "192.168.4.107"  # 服务器地址
 host = f"https://{IP}:8440"
 sys_pas = 'Wnt.1@3456'
 admin = 'admin' #初始用户名

@@ -159,12 +159,11 @@ if __name__ == '__main__':
     pas = RsaEncrypt('public_key.keystore').encrypt_data('wnt8000LLy&y')
     data = {"userName": user, "userPassword": pas}
     print(data)
-    res = requests.post(url='https://192.168.100.149:8440/login/userLogin', json=data, verify=False)
+    res = requests.post(url='https://192.168.4.88:8440/login/userLogin', json=data, verify=False)
     result =json.loads(res.text)
     print(result)
     header ={
         'Authorization': result["data"]["accessToken"]
     }
-    # res1 = requests.get(url='https://192.168.100.71:8440/kvenum/alarmLevel', headers=header, verify=False)
+    print(header)
 
-    # print(json.loads(res.text))

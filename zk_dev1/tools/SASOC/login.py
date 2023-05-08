@@ -11,7 +11,6 @@ def login(user_body):
     print("======操作结果是======", f"{res.json()}")
     print("======token是======", f"{res.json()['data']['accessToken']}")
     token = res.json()['data']['accessToken']
-    print(token)
     return token
 
 

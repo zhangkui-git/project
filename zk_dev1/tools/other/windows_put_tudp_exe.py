@@ -38,7 +38,6 @@ def putUdp():
         tkinter.messagebox.showwarning(message='Udp包发送失败')
 
 
-
 def putTcp():
     a, b, c, d, e = show()
     arg1 = a
@@ -60,8 +59,6 @@ def putTcp():
         tkinter.messagebox.showinfo(message=f'{arg4}条Tcp包发送成功')
     except:
         tkinter.messagebox.showwarning(message='Tcp包发送失败')
-
-
 
 
 def inputclear():
