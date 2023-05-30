@@ -1,46 +1,111 @@
-
-# import requests
-# res = requests.post('https://www.cnblogs.com/zhengyihan1216/p/11549820.html', verify=False)
-# # res.encoding = res.apparent_encoding
-# print(res.content.decode('utf-8'))
-# print(res.text)
-import datetime
-
-from fake_useragent import UserAgent
-import requests
-from bs4 import BeautifulSoup as bs
+# 为函数添加一个统计运行时长的功能
 import time
-import re
-import gzip
-import urllib.request
-from io import StringIO, BytesIO
-from lxml import etree
-import os
+import threading
 
-ua = UserAgent()
-# header = {'User-Agent': f'{ua.firefox}', 'Cookie': "global_cookie=ly9htoz4k600ggakp3xvzvbcl18lfmde5gn; __utmz=147393320.1679651997.1.1.utmcsr=fangjia.fang.com|utmccn=(referral)|utmcmd=referral|utmcct=/; csrfToken=wYk5QwML5sJOKArdZuASIIyk; __utmc=147393320; city=hs; __utma=147393320.2094528334.1679651997.1680244532.1680504167.3; __utmt_t0=1; __utmt_t1=1; __utmt_t2=1; __utmt_t3=1; __utmt_t4=1; global_wapandm_cookie=3o8ggf348y5wh82mqecm0rllx1ulg0gt44l; unique_wapandm_cookie=U_3o8ggf348y5wh82mqecm0rllx1ulg0gt44l*1; g_sourcepage=xf_lp%5Elb_pc; __utmb=147393320.40.10.1680504167; unique_cookie=U_sgopr3p872nki88yh0phen0d926lfw67kiq*24"}
-header = {'User-Agent': f'{ua.firefox}'}
-url = 'https://hs.newhouse.fang.com/house/s/e31/'
-res = requests.get(url=url, headers=header, verify=False)
-res.encoding = res.apparent_encoding
-r_html = res.text
-# soup5 = bs(r_html, "html.parser")
-# soup5 = bs(r_html, 'lxml')
-print(r_html)
-# word_list = soup5.find('ul', class_="lh_newBobotm02")('li')
-# # print(word_list)
-#
-# n = 1
-# for b in word_list:
-#     if n <= 5:
-#         print(b.find_next('span').text.replace('\n', '').strip(),  '  ', b.select('a')[1].text, b.select('a')[1]['href'], '\n===================')
-#         # print(222222, b.select('a')[1].text, b.select('a')[1]['href'])
-#         # time.sleep(300)
-#         n += 1
-#     else:
-#         break
 
-# print(str(datetime.datetime.now())[:11])
+def how_much_time(func):
+    def inner():
+        t_start = time.time()
+        func()
+        t_end = time.time()
+        print("一共花费了{0}秒时间".format(t_end - t_start, ))
+
+    return inner
+    # 将增加的新功能代码以及被装饰函数运行代码func()一同打包返回，返回的是一个内部函数，这个被返回的函数就是装饰器
+
+
+def sleep_5s():
+    time.sleep(5)
+    print("%d秒结束了" % (5,))
+
+
+def sleep_6s():
+    time.sleep(6)
+    print("%d秒结束了" % (6,))
+
+
+sleep_5s = how_much_time(sleep_5s)
+# 因为sleep_5s函数的功能就是睡5秒钟，虽然增加了统计运行时间的功能，但是他本身功能没变(还是睡5秒钟)，所以仍然用原来函数名接收增加功能了的自己
+sleep_6s = how_much_time(sleep_6s)
+
+t1 = threading.Thread(target=sleep_5s)
+t2 = threading.Thread(target=sleep_6s)
+t1.start()
+t2.start()
+# 5秒结束了
+# 一共花费了5.014161109924316秒时间
+# 6秒结束了
+# 一共花费了6.011810302734375秒时间
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
