@@ -14,35 +14,36 @@ import allure
 import pytest
 import requests
 
-from zk_dev2.test.other_py.apiautotest.api.isa.alarm_handling import AlarmRetrieval, AlarmOverview, AlarmOverviewPicture, AlarmRetrievalTraceability, \
-    AlarmTraceabilityList, AlarmTraceabilityEventList, ThreatIntelligenceDetails, ThreatIntelligence
+# from zk_dev2.test.other_py.apiautotest.api.isa.alarm_handling import AlarmRetrieval, AlarmOverview, AlarmOverviewPicture, AlarmRetrievalTraceability, \
+#     AlarmTraceabilityList, AlarmTraceabilityEventList, ThreatIntelligenceDetails, ThreatIntelligence
 from zk_dev2.test.other_py.apiautotest.api.isa.asset_center import *
-from zk_dev2.test.other_py.apiautotest.api.isa.audit import OperatorLog
-from zk_dev2.test.other_py.apiautotest.api.isa.data_analysis import LogRetrieve
-from zk_dev2.test.other_py.apiautotest.api.isa.login import VulnerabilityConfiguration
-from zk_dev2.test.other_py.apiautotest.api.isa.monitoring_center import SafetyNotice, AddSafetyNotice, DeleteSafetyNotice, ThreatTransverse, \
-    OperationalSituation, OperationalSituationQuickSearh, QuickSearhPage, RunMonitoringPage, RealTimeCpu, HistoryTimeCpu
+# from zk_dev2.test.other_py.apiautotest.api.isa.audit import OperatorLog
+# from zk_dev2.test.other_py.apiautotest.api.isa.data_analysis import LogRetrieve
+# from zk_dev2.test.other_py.apiautotest.api.isa.login import VulnerabilityConfiguration
+# from zk_dev2.test.other_py.apiautotest.api.isa.monitoring_center import SafetyNotice, AddSafetyNotice, DeleteSafetyNotice, ThreatTransverse, \
+#     OperationalSituation, OperationalSituationQuickSearh, QuickSearhPage, RunMonitoringPage, RealTimeCpu, HistoryTimeCpu
 from zk_dev2.test.other_py.apiautotest.api.isa.policy_config import *
-from zk_dev2.test.other_py.apiautotest.api.isa.report_manage import AddInstantReport, ReportManageChapter, InstantReportList, DeleteInstantReport
-from zk_dev2.test.other_py.apiautotest.api.isa.security_knowledge_base import CommonPortLibrary, ModCommonPort, EqualProtectionKnowledgeBase, \
-    AssetFingerprintLibrary, AssetFingerprintQuickSearch, VulnerabilityLibrary, SuggestionLibrary, \
-    SecurityAnalysisQuery, IntelligenceUpdate, IntelligenceUpdatePage, IntelligenceUpload, IntelligenceDetail
-from zk_dev2.test.other_py.apiautotest.api.isa.system_config import AddDashboard, DashboardPage, DeleteDashboard, AuthorizationManagement, ShowDashboard
-from zk_dev2.test.other_py.apiautotest.api.login_api import login_test, Login
-from zk_dev2.test.other_py.apiautotest.common.dbutil import DB, Linux
-from zk_dev2.test.other_py.apiautotest.common.syslog import syslog
-from zk_dev2.test.other_py.apiautotest.config.config import host, IP, linux_port, linux_user, linux_pass
-from zk_dev2.test.other_py.apiautotest.data.common_data import personal_username, password, audit, admin
+# from zk_dev2.test.other_py.apiautotest.api.isa.report_manage import AddInstantReport, ReportManageChapter, InstantReportList, DeleteInstantReport
+# from zk_dev2.test.other_py.apiautotest.api.isa.security_knowledge_base import CommonPortLibrary, ModCommonPort, EqualProtectionKnowledgeBase, \
+#     AssetFingerprintLibrary, AssetFingerprintQuickSearch, VulnerabilityLibrary, SuggestionLibrary, \
+#     SecurityAnalysisQuery, IntelligenceUpdate, IntelligenceUpdatePage, IntelligenceUpload, IntelligenceDetail
+# from zk_dev2.test.other_py.apiautotest.api.isa.system_config import AddDashboard, DashboardPage, DeleteDashboard, AuthorizationManagement, ShowDashboard
+# from zk_dev2.test.other_py.apiautotest.api.login_api import login_test, Login
+# from zk_dev2.test.other_py.apiautotest.common.dbutil import DB, Linux
+# from zk_dev2.test.other_py.apiautotest.common.syslog import syslog
+# from zk_dev2.test.other_py.apiautotest.config.config import host, IP, linux_port, linux_user, linux_pass
+# from zk_dev2.test.other_py.apiautotest.data.common_data import personal_username, password, audit, admin
+
 
 @allure.feature('冒烟测试')
 class Test_V2R6_Smoke():
     # 前置处理创建数据库对象
-    def setup_class(self):
-        self.db = DB('database')
-
-    # 后置处理，断开数据库连接
-    def teardown_class(self):
-        self.db.close()
+    # def setup_class(self):
+    #     self.db = DB('database')
+    #
+    # # 后置处理，断开数据库连接
+    # def teardown_class(self):
+    #     self.db.close()
 
     @allure.story('ISA-3119')
     def test_add_field_information(self):
@@ -54,10 +55,11 @@ class Test_V2R6_Smoke():
         # 查看日志源页面，获取id,传入修改日志源接口
         resp = LogSourcePage().send()
         result = resp.json()
-        print(result)
-        id = result['data']['logSourceList']['list'][0]['id']
+        print(1111, result)
+        # id = result['data']['logSourceList']['list'][0]['id']
+        id = result['data']
         assetIp = result['data']['logSourceList']['list'][0]['assetIp']  # 日志源ip
-        print(assetIp)
+        print(2222, assetIp)
         # 修改日志源
         mod = ModLogSource()
         mod.json = {"logSourceName": assetIp, "assetIp": assetIp, "factory": 3, "assetType": 101001,
@@ -112,4 +114,9 @@ class Test_V2R6_Smoke():
         result = json.loads(resp.text)
         print(result)
         pytest.assume(result['statusCode'] == 1000)
+
+
+if __name__ == '__main__':
+    Test_V2R6_Smoke().test_add_field_information()
+
 
