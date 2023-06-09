@@ -6,7 +6,7 @@ token = user_login()
 def asset_add():
     asset_add_url = f"{host}/asset/assetadd"
     asset_add_headers = {"Content-Type": "application/json;charset=UTF-8", "Authorization": f'{token}'}
-    asset_add_body = {"name": "test1-10.2","groupId": 3,"ip": "192.168.10.2","ipStandby": "","ipV6": "","ipV6Standby": "","platform": "Windows","protocol": ["SSH/22"]}
+    asset_add_body = {"name":"123@@@@!!!!!!!!!","groupId":3,"ip":"111.2.3.2","ipStandby":"","ipV6":"","ipV6Standby":"","platform":"2eb1b7c4e81fef49b43177a34f879900","protocol":["SSH/22"],"scriptName":"","url":"","db":"","serverName":3,"somsAssetScripts":[]}
     res = requests.post(url=asset_add_url, headers=asset_add_headers, json=asset_add_body, verify=False)
     print(res.json())
 
@@ -40,9 +40,9 @@ if __name__ == '__main__':
     # while n <= 250:
     #     asset_adds(n)
     #     n += 1
-    # asset_add()
-    n = 2
-    while n <= 40:
-        asset_passwords(n)
-        n += 1
+    asset_add()
+    # n = 2
+    # while n <= 40:
+    #     asset_passwords(n)
+    #     n += 1
     # asset_password()

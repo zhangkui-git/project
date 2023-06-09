@@ -104,17 +104,17 @@ def sendmail(product, version, host, mem, time1, speed, py_send_sum, sys_sum, es
         print("Error: 无法发送邮件")
 
 
-# if __name__ == '__main__':
-#     product = "日志审计与分析系统"
-#     version = 'V100R007C01B070'
-#     host = "192.168.4.152"
-#     mem = 4
-#     time1 = 5
-#     speed = 6
-#     count = 7
-#     sys_sum = 8
-#     es_lost_sum = 9
-#     avg = 10
-#     sendmail(product, version, host, mem, time1, speed, count, sys_sum, es_lost_sum, avg)
+if __name__ == '__main__':
+    product = "日志审计与分析系统"
+    version = 'V100R007C01B070'
+    host = "192.168.4.152"
+    mem = 4
+    time1 = 5
+    speed = 6
+    count = 7
+    sys_sum = 8
+    es_lost_sum = 9
+    avg = 10
+    sendmail(product, version, host, mem, time1, speed, count, sys_sum, es_lost_sum, avg)
 
 
