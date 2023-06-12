@@ -1,7 +1,7 @@
 import time
 import requests
 
-from zk_dev1.laa_test_020_imp.common_tool.encry_decry import *
+from zk_dev1.test_imp.common_tool.encry_decry import *
 
 
 user = RsaEncrypt('public_key.keystore').encrypt_data(f'{username}')

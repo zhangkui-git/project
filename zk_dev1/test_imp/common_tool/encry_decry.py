@@ -16,7 +16,7 @@ from Crypto.Cipher import PKCS1_v1_5 as PKCS1_cipher, AES
 from Crypto.PublicKey import RSA
 
 
-from zk_dev1.laa_test_020_imp.common_tool.common_conf import *
+from zk_dev1.test_imp.common_tool.common_conf import *
 # DIR_NAME = os.path.dirname(os.getcwd())
 DIR_NAME = os.getcwd()
 
