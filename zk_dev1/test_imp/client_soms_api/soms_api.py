@@ -1,4 +1,3 @@
-import time
 
 from zk_dev1.test_imp.client_soms_api.base_api import *
 from zk_dev1.test_imp.client_soms_api.soms_json_data import *
@@ -38,7 +37,7 @@ class Soms_DelUser(BaseApi):
 
 
 if __name__ == '__main__':
-    Soms_Login('admin_zk1', 'Admin@123').send()
+    Soms_Login('admin_zk', 'Admin@123').send()
     Soms_AddUser().send()
     Soms_DelUser().send()
 

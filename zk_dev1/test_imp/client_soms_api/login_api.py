@@ -1,5 +1,4 @@
 from zk_dev1.test_imp.common_soms_tool.SM4_CBC import *
-from zk_dev1.test_imp.client_soms_api.client import *
 
 
 def SomsLogin(user, pas):
@@ -8,7 +7,7 @@ def SomsLogin(user, pas):
     pas = SM4Utils().encryptData_CBC(bytes(pas, "UTF-8"))
     body = {"userName": f"{user}", "password": f"{pas}"}
     res = requests.post(url=url, json=body, verify=False)
-    print(res.json()['data']['accessToken'])
+    # print(res.json()['data']['accessToken'])
     return res.json()['data']['accessToken']
 
 

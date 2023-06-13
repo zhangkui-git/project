@@ -1,7 +1,8 @@
 import jsonpath
 import requests
 
-from zk_dev1.test_imp.common_soms_tool.logger import GetLog
+# from zk_dev1.test_imp.common_soms_tool.logger import GetLog
+from zk_dev1.test_imp.common_soms_tool.logger import GetLogger
 
 
 class RequestsClient:
@@ -9,7 +10,7 @@ class RequestsClient:
     def __init__(self):
         # 创建一个requests的session对象
         self.session = requests.session()
-        self.logger = GetLog().get_log()
+        self.logger = GetLogger().get_logger()
         self.host = None
         self.url = None
         self.method = None
