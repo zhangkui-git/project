@@ -1,20 +1,21 @@
-
 import json
 import requests
 from gmssl.sm4 import CryptSM4, SM4_ENCRYPT, SM4_DECRYPT
 import base64
+import urllib3
+from zk_dev1.test_imp.common_soms_tool.common_conf import *
+urllib3.disable_warnings()
 
-from zk_dev1.test_imp.common_tool.common_conf import *
 
-
-def get_key():  # 通过接口获取IV 、KEY
+def get_key():
+    # 通过接口获取IV 、KEY
     url = f"{host}/login/getPublicKey"
     res = requests.get(url=url, verify=False)
-    print(res.json()['data'])
+    # print(res.json()['data'])
     return res.json()['data']
 
 
-class SM4Utils:
+class SM4Utils():
 
     def __init__(self, ):
         pass
@@ -53,15 +54,15 @@ class SM4Utils:
         iv = bytes(get_key()["iv"], "UTF-8")
         key = bytes(get_key()["key"], "UTF-8")
         secret_key = key
-        print(secret_key)
+        # print(secret_key)
         crypt_sm4.set_key(secret_key, SM4_DECRYPT)
         # 将转入参数base64.b64decode解码成十六进制的bytes类型
         byt_cipher_text = base64.b64decode(cipher_text)
         # 调用加密方法解密，解密后为bytes类型
         decrypt_value = crypt_sm4.crypt_cbc(iv, byt_cipher_text)
-        print(decrypt_value)
-        print(decrypt_value.decode('utf-8', 'ignore'))
-        print(json.dumps(decrypt_value.decode('utf-8', 'ignore')))
+        # print(decrypt_value)
+        # print(decrypt_value.decode('utf-8', 'ignore'))
+        # print(json.dumps(decrypt_value.decode('utf-8', 'ignore')))
 
         return decrypt_value.decode('utf-8', 'ignore')
 

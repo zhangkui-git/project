@@ -3,15 +3,30 @@ import time
 import requests
 import pytest
 import allure
-from zk_dev1.test_imp.common_tool.logger import GetLog
-from zk_dev1.test_imp.common_tool.s_mysql import *
-from zk_dev1.test_imp.common_tool.encry_decry import *
+from zk_dev1.test_imp.common_soms_tool.logger import GetLog
+from zk_dev1.test_imp.common_soms_tool.s_mysql import *
+from zk_dev1.test_imp.common_soms_tool.encry_decry import *
 write_log = GetLog().get_log()
 
 user = RsaEncrypt('public_key.keystore').encrypt_data(f'{username}')
 pas = RsaEncrypt('public_key.keystore').encrypt_data(f'{password}')
 
 print(user, pas)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 def user_login():   # 登录

@@ -1,6 +1,6 @@
 import logging
 from logging.handlers import TimedRotatingFileHandler
-from zk_dev1.test_imp.common_tool.common_conf import log_dir_name
+from zk_dev1.test_imp.common_soms_tool.common_conf import log_dir_name
 
 
 class GetLog(object):

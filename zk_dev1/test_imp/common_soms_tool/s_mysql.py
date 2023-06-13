@@ -1,5 +1,5 @@
 import pymysql as mysql
-from zk_dev1.test_imp.common_tool.common_conf import *
+from zk_dev1.test_imp.common_soms_tool.common_conf import *
 
 
 def select(sql):

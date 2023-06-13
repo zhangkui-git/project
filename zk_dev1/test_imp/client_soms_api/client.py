@@ -1,7 +1,7 @@
 import jsonpath
 import requests
 
-from zk_dev1.test_imp.common_tool.logger import GetLog
+from zk_dev1.test_imp.common_soms_tool.logger import GetLog
 
 
 class RequestsClient:

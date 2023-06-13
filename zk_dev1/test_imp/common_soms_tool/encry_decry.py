@@ -16,7 +16,7 @@ from Crypto.Cipher import PKCS1_v1_5 as PKCS1_cipher, AES
 from Crypto.PublicKey import RSA
 
 
-from zk_dev1.test_imp.common_tool.common_conf import *
+from zk_dev1.test_imp.common_soms_tool.common_conf import *
 # DIR_NAME = os.path.dirname(os.getcwd())
 DIR_NAME = os.getcwd()
 
@@ -66,7 +66,7 @@ class RsaEncrypt():
     """
     def __init__(self, public_file):
         # self.public_file = public_file
-        self.public_file = DIR_NAME+'\\common_tool\\public_key.keystore'
+        self.public_file = DIR_NAME+'\\common_soms_tool\\public_key.keystore'
     #     self.private_file = private_file
 
     def generate_key(self):

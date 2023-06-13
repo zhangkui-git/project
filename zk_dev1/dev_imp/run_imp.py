@@ -6,8 +6,8 @@ from common_tool.send_mail import send_mail
 
 
 if __name__ == '__main__':
-    # pytest.main(["-s", '--alluredir', f'report/result{com_time}', "./test_case/test_imp_case.py"])
-    pytest.main(["-s", '--alluredir', f'report/result{com_time}', "./end_py/test_imp_case.py"])
+    # pytest.main(["-s", '--alluredir', f'report/result{com_time}', "./test_case/test_soms_case.py"])
+    pytest.main(["-s", '--alluredir', f'report/result{com_time}', "./end_py/test_soms_case.py"])
     split = 'allure ' + 'generate ' + '-–clean ' + f'./report/result{com_time} ' + '-o ' + f'./report/result{com_time}/html'
     # split = 'allure ' + 'serve ' + os.path.join(os.path.abspath('./report'), 'result')
     os.system(split)
