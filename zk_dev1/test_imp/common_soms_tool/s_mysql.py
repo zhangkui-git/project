@@ -4,7 +4,7 @@ from zk_dev1.test_imp.common_soms_tool.common_conf import *
 
 def select(sql):
     # 连接数据库
-    con = mysql.connect(host=f"{ip}", port=3306, user="root", passwd="Wnt.1@3456", db="soc", charset="utf8")
+    con = mysql.connect(host=db_host, port=db_port, user=db_name, passwd=db_pas, db=db_scn_name, charset="utf8")
     # 创建一个游标对象
     cur = con.cursor(cursor=mysql.cursors.DictCursor)
     # print("连接成功")

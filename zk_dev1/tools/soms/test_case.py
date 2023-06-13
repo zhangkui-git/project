@@ -35,14 +35,25 @@ def asset_passwords(n):
     print(res.json())
 
 
+def add_user():
+    add_user_url = host + '/userpermission/usermanage/addUser'
+    add_user_headers = {"Content-Type": "application/json;charset=UTF-8", "Authorization": f'{token}'}
+    add_user_body = {"userName": "30KNENd6WgKaHCnsPzFNgQ==", "roleId": 1, "telephone": "13211131113", "email": "123@qq.com", "realName": "a11", "authType": 0, "validTime": "2023-06-13", "invalidTime": "2023-06-29", "password": "X+XejHe8D7IO6NfwCRH+hQ==", "description": "a11", "updateType": 3}
+    res = requests.post(url=add_user_url, headers=add_user_headers, json=add_user_body, verify=False)
+    print(res.json())
+
+
 if __name__ == '__main__':
     # n = 1
     # while n <= 250:
     #     asset_adds(n)
     #     n += 1
-    asset_add()
+    # asset_add()
     # n = 2
     # while n <= 40:
     #     asset_passwords(n)
     #     n += 1
     # asset_password()
+    add_user()
+
+

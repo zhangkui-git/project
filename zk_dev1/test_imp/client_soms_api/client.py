@@ -40,10 +40,13 @@ class RequestsClient:
             kwargs['files'] = self.files
         if kwargs.get('verify') is None:
             kwargs['verify'] = self.verify
+        self.logger.info('传入参数header：{}'.format(self.headers))
+        print(1233333333)
+        self.logger.info('传入参数body: {}'.format(self.json))
+        print(1244444444)
         self.logger.info('接口地址：{}'.format(self.url))
         # for item in kwargs.items():
         #     self.logger.info('接口信息:{}'.format(item))
-        print("测试", self.headers)
         self.resp = self.session.request(**kwargs)
         self.logger.info('接口响应状态码:{}'.format(self.resp.status_code))
         self.logger.info('接口响应内容:{}'.format(self.resp.text))

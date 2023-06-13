@@ -1,22 +1,27 @@
 import time
 
 import requests
-import pytest
-import allure
+# import pytest
+# import allure
 from zk_dev1.test_imp.common_soms_tool.logger import GetLog
-from zk_dev1.test_imp.common_soms_tool.s_mysql import *
-from zk_dev1.test_imp.common_soms_tool.encry_decry import *
+# from zk_dev1.test_imp.common_soms_tool.s_mysql import *
+# from zk_dev1.test_imp.common_soms_tool.encry_decry import *
+from zk_dev1.test_imp.client_soms_api.soms_api import *
 write_log = GetLog().get_log()
 
-user = RsaEncrypt('public_key.keystore').encrypt_data(f'{username}')
-pas = RsaEncrypt('public_key.keystore').encrypt_data(f'{password}')
 
-print(user, pas)
+class Soms_test_smoke(BaseApi):
+    def __init__(self):
+        BaseApi.__init__(self)
+
+    def start(self):
+        Soms_Login('admin_zk1', 'Admin@123').send()
+        Soms_AddUser().send()
+        Soms_DelUser().send()
 
 
-
-
-
+if __name__ == '__main__':
+    Soms_test_smoke().start()
 
 
 
