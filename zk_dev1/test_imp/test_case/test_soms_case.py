@@ -17,8 +17,7 @@ class Test_Soms_Smoke(object):
     @allure.title('soms-2')
     def test_Add_user(self):
         res = Soms_AddUser().send()
-        print(1111111111111, res.json()['statusCode'])
-        # pytest.assume(res.json()['statusCode'] == 200)
+        pytest.assume(res.json()['statusCode'] == 200)
 
     @allure.story('新增规则')
     @allure.title('soms-3')
