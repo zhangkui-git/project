@@ -8,7 +8,7 @@ com_time = str(add_time.strftime('%Y%m%d%H%M%S'))
 dsc_path = '/home/zhangkui/zhangkui/allure/apache-tomcat-8.5.81/allure/report'
 src_path = rf'{dir1}\report\result{com_time}\html'
 src_path_new = rf'{dir1}\report\result{com_time}\html.zip'
-get_url = f'http://192.168.4.165:8780/report/{com_time}/html/index.html'
+get_url = f'http://192.168.5.153:8780/report/{com_time}/html/index.html'
 
 source_dir = src_path
 output_filename = src_path_new
@@ -35,7 +35,7 @@ def sshzk():
     # 即允许将信任的主机自动加入到host_allow 列表，此方法必须放在connect方法的前面
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     # 连接服务器
-    ssh.connect(hostname="192.168.4.165", port=22, username="zhangkui", password="ab2021cdzk")
+    ssh.connect(hostname="192.168.5.153", port=22, username="zhangkui", password="ab2021cdzk")
     # 执行命令1
     stdin, stdout, stderr = ssh.exec_command(f'cd {dsc_path}; mkdir {com_time}')
     # 结果放到stdout中，如果有错误将放到stderr中
@@ -43,7 +43,7 @@ def sshzk():
     # 获取错误提示（stdout、stderr只会输出其中一个）
     err = stderr.read()
     # 连接虚拟机centos上的ip及端口，实例化一个transport对象
-    transport = paramiko.Transport(("192.168.4.165", 22))
+    transport = paramiko.Transport(("192.168.5.153", 22))
     transport.connect(username="zhangkui", password="ab2021cdzk")
     # 将实例化的Transport作为参数传入SFTPClient中
     sftp = paramiko.SFTPClient.from_transport(transport)

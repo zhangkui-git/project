@@ -2,6 +2,7 @@
 from zk_dev1.test_imp.client_soms_api.base_api import *
 from zk_dev1.test_imp.client_soms_api.soms_json_data import *
 from zk_dev1.test_imp.common_soms_tool.s_mysql import *
+write_log = GetLogger().get_logger()
 
 
 class Soms_Login(RequestsClient):
@@ -22,7 +23,14 @@ class Soms_AddUser(BaseApi):
         self.url = host + '/userpermission/usermanage/addUser'
         self.method = 'post'
         self.json = add_user
-        print(11111111111111)
+
+
+class Soms_AddRole(BaseApi):
+    def __init__(self):
+        BaseApi.__init__(self)
+        self.url = host + '/userpermission/rolemanage/add'
+        self.method = 'post'
+        self.json = user_role
 
 
 class Soms_DelUser(BaseApi):
@@ -33,13 +41,12 @@ class Soms_DelUser(BaseApi):
         self.method = 'delete'
         del_user_id = select('select id from system_user where user_name = "a11"')[0]['id']
         self.json = {'ids': [del_user_id]}
-        print(222222222222)
 
 
 if __name__ == '__main__':
-    Soms_Login('admin_zk', 'Admin@123').send()
+    # Soms_Login('admin_zk', 'Admin@123').send()
     Soms_AddUser().send()
-    Soms_DelUser().send()
+    # Soms_DelUser().send()
 
 
 

@@ -42,7 +42,7 @@ class SM4Utils():
         # 用base64.b64encode转码（编码后的bytes）
         cipher_text = base64.b64encode(encrypt_value)
 
-        print("加密后：", cipher_text)
+        # print("加密后：", cipher_text)
         # print(cipher_text.decode('utf-8', 'ignore'))
         # 返回加密后的字符串
         return cipher_text.decode('utf-8', 'ignore')

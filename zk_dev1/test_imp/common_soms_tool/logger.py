@@ -15,7 +15,7 @@ class GetLogger:
     def get_logger(cls):
         if cls.logger is None:
             # 创建日志器，控制他的创建次数
-            cls.logger = logging.getLogger('apiautotest')  # 这里的值是自定义的
+            cls.logger = logging.getLogger('test_imp')  # 这里的值是自定义的
             # 设置总的级别，debug/info/warning/error
             # 设置debug级别，意味着高于debug的都会被收集
             cls.logger.setLevel(logging.DEBUG)

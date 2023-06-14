@@ -1,30 +1,41 @@
-import time
-
-import requests
-# import pytest
-# import allure
-from zk_dev1.test_imp.common_soms_tool.logger import GetLogger
-# from zk_dev1.test_imp.common_soms_tool.s_mysql import *
-# from zk_dev1.test_imp.common_soms_tool.encry_decry import *
+import pytest
+import allure
 from zk_dev1.test_imp.client_soms_api.soms_api import *
-from zk_dev1.test_imp.client_soms_api.login_api import *
 write_log = GetLogger().get_logger()
 
 
-class Soms_test_smoke(BaseApi):
-    def __init__(self):
-        BaseApi.__init__(self)
-        BaseApi.Authorization = SomsLogin(username, password)
+@allure.feature('堡垒机冒烟测试')
+class Test_Soms_Smoke(object):
 
-    @staticmethod
-    def start():
-        Soms_Login('admin_zk', 'Admin@123').send()
-        Soms_AddUser().send()
-        Soms_DelUser().send()
+    @allure.story('登录')
+    @allure.title('soms-1')
+    def test_Login(self):
+        res = Soms_Login('admin_zk1', 'Admin@123').send()
+        pytest.assume(res.json()['statusCode'] == 200)
+
+    @allure.story('新增用户')
+    @allure.title('soms-2')
+    def test_Add_user(self):
+        res = Soms_AddUser().send()
+        print(1111111111111, res.json()['statusCode'])
+        # pytest.assume(res.json()['statusCode'] == 200)
+
+    @allure.story('新增规则')
+    @allure.title('soms-3')
+    def test_Add_Role(self):
+        res = Soms_AddRole().send()
+        pytest.assume(res.json()['statusCode'] == 200)
+
+    @allure.story('删除用户')
+    @allure.title('soms-4')
+    def test_Del_User(self):
+        res = Soms_DelUser().send()
+        pytest.assume(res.json()['statusCode'] == 200)
 
 
 if __name__ == '__main__':
-    Soms_test_smoke().start()
+    # test_Soms_Smoke().test_adduser()
+    print("--------测试完成--------")
 
 
 

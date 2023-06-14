@@ -1,7 +1,6 @@
 import jsonpath
 import requests
 
-# from zk_dev1.test_imp.common_soms_tool.logger import GetLog
 from zk_dev1.test_imp.common_soms_tool.logger import GetLogger
 
 
@@ -42,9 +41,7 @@ class RequestsClient:
         if kwargs.get('verify') is None:
             kwargs['verify'] = self.verify
         self.logger.info('传入参数header：{}'.format(self.headers))
-        print(1233333333)
         self.logger.info('传入参数body: {}'.format(self.json))
-        print(1244444444)
         self.logger.info('接口地址：{}'.format(self.url))
         # for item in kwargs.items():
         #     self.logger.info('接口信息:{}'.format(item))
