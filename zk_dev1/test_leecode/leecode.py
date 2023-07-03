@@ -255,4 +255,30 @@ def findPairs(nums, k):
     return len(ans)
 
 
+#  Counter 函数， 2023.6.13
+# from collections import Counter
+# nums = [4, 4, 2, 4, 3, 2, 5]
+#
+# class Solution:
+#     def unequalTriplets(self, nums):
+#         cnt = Counter(nums)
+#         n = len(nums)
+#         ans = a = 0
+#         print(1111, cnt)
+#         for b in cnt.values():
+#             c = n - a - b
+#             print(a, b, c)
+#             ans += a * b * c
+#             a += b
+#         return ans
+#
+# print(Solution().unequalTriplets(nums))
+
+
+
+
+
+
+
+
 

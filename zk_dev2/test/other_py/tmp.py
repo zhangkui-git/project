@@ -1,58 +1,14 @@
 
-list1 = [1, 2, 3, 4, 8]
-list2 = [2, 3, 4, 5, 6]
-list3 = [4, 5, 6, 7, 8]
+foo = [21, 38, 38, 56, 23, 19, 11, 15, 19, 13, 20, 6, 0, 8, 0, 10, 11, 0, 11, 8, 12, 5]
 
-print(list(map(lambda x, y, z: z if x < y < z else 'NO', list1, list2, list3)))
-
-
-def add(num, b=1):
-    return num + b
+# 第一种
+a = ','.join(map(str, foo))
+print(111, a)
 
 
-def get_num(func, arr):
-    b = 0
-    for i in arr:
-        if func(i):
-            b += i
-    print(b)
-
-
-a = lambda x: x % 8 == 0
-arr = [2, 4, 16, 8]
-get_num(a, arr)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 第二种
+bar = ''.join(str(i) for i in foo)
+print(222, bar)
 
 
 
