@@ -1,0 +1,56 @@
+1 dbutil.py   # 数据库入口
+
+if __name__ == '__main__':
+
+    ① 手动添加资产 rdp（192.168.4.119，账号test1-test100）和ssh资产（对应修改config.py的ssh_ip）
+    db = DB('database')
+    db.update("UPDATE `soms`.`system_config` SET `sys_value`='2880' WHERE  `sys_key`='system_timeout';")    # 修改系统超时时间
+    db.update("UPDATE `soms`.`system_config` SET `sys_value`='2880' WHERE  `sys_key`='session_timeout';")    # 修改系统超时时间
+    db.update("UPDATE `soms`.`system_config` SET `sys_value`='100' WHERE  `sys_key`='max_login_user';")    # 修改最大并发登录用户数
+    rdp_id = db.select(f"select id from soms.soms_asset_info where ip='{rdp_ip}';")  # rdp 192.168.4.119的id
+    rdpId = rdp_id[0]['id']
+    for i in range(1, 101):   # 新增资产用户 test1-test100   密码 Admin@123
+        db.update(f"INSERT INTO `soms`.`soms_asset_user_pwd` (`asset_id`, `username`, `password`, `create_time`, `update_time`, `protocol`) VALUES ('{rdpId}', 'test{i}', '6933921fa54e5ef3b5be8ccb015329b3', '2023-05-23 14:33:44', '2023-05-23 14:33:44', 'RDP');")
+
+    # 添加operator用户 op1-op60
+    update_time = db.select("select last_update_pwd_time from soms.system_user where user_name='admin'")
+    updateTime = update_time[0]['last_update_pwd_time']
+    user_name = db.select("select user_name from soms.system_user")
+    users = [user['user_name'] for user in user_name]
+    user_password = db.select("select password from soms.system_user where user_name='admin'")
+    user_password = user_password[0]['password']
+    salt = db.select("select salt from soms.system_user where user_name='admin'")
+    salt = salt[0]['salt']
+    for i in range(1, 61):  # 新增operator账户 op1-op60 密码 wnt8000LLy&y
+        if f'op{i}' not in users:
+            db.update(
+                f"INSERT INTO `soms`.`system_user` (`user_name`, `real_name`, `password`, `salt`, `telephone`, `email`, `department`, `position`, `role_id`, `create_type`, `create_time`, `last_update_pwd_time`) VALUES ('op{i}', '', '{user_password}', '{salt}', '', '', '', '', '2', '1', '{updateTime}', '{updateTime}');")
+    db.close()
+
+    ② 执行完 手动添加权限组
+    ③ 执行应用发布修改 远程桌面的在线时间（查看是否需要修改）
+
+2 执行入口：async.py
+
+之前测试rdp使用op1-op10, ssh使用op20-op60, 如果后续不够用可在添加用户时增加并合理分配
+ssh:
+    users_ssh(count)  # ssh测试
+
+    count为单用户执行次数，每次为60秒。 执行时间= count * 60s
+
+    users_ssh函数中 name_list = [f'op{num}' for num in range(21, 41)]  代表运维的用户数 每个用户运维10个资产
+
+rdp:
+    user_rdp()  # rdp测试
+    result_compare()    # 比较5分钟前后/write_file/{rdp_num}内容是否有变化，如果有变化则正常运维，无变化则已停止运维
+
+db.yml 数据库配置
+
+config.py
+    服务器ip地址、linux 配置、 rdp配置
+
+    ssh配置 ssh_ip = '192.168.100.71' 此为连接ssh的远程地址
+
+    name_list = ['op1']   # 堡垒机用户名 此为堡垒机登录的用户数量 每个用户运维10个 运维数= 个数 * 10
+
+login_interface.py  # 登录相关的操作

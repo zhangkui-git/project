@@ -1,0 +1,7 @@
+database:
+  ip: 192.168.100.71
+  username: root
+  password: Wnt.1@3456
+  port: 3306
+  db: soc
+  charset: utf8

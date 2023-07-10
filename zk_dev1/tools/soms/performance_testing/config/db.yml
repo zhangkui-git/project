@@ -1,0 +1,8 @@
+database:
+  ip: 192.168.5.163
+  username: root
+  password: Wnt.1@3456
+#  password: Wnt123456
+  port: 3306
+  db: soms
+  charset: utf8

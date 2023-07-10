@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jun 14 10:32:19 CST 2023","Wed Jun 14 10:32:19 CST 2023","50","test_case","test_soms_case","Test_Soms_Smoke","","","soms-4",""
+"passed","Wed Jun 14 10:32:19 CST 2023","Wed Jun 14 10:32:19 CST 2023","471","test_case","test_soms_case","Test_Soms_Smoke","","","soms-1",""
+"passed","Wed Jun 14 10:32:19 CST 2023","Wed Jun 14 10:32:19 CST 2023","47","test_case","test_soms_case","Test_Soms_Smoke","","","soms-3",""
+"passed","Wed Jun 14 10:32:19 CST 2023","Wed Jun 14 10:32:19 CST 2023","38","test_case","test_soms_case","Test_Soms_Smoke","","","soms-2",""

@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<RSAS_RESULT>
+  <DEVICE_NAME>工控漏洞扫描平台</DEVICE_NAME>
+  <DEVICE_VERSION>V2.0</DEVICE_VERSION>
+  <HOSTS>
+    <RESULTS>
+      <HOST_NAME>192.168.0.202</HOST_NAME>
+      <HOST_MAC>B4:4B:D6:59:37:FC</HOST_MAC>
+      <HOST_OS>Linux Kernel 2.6</HOST_OS>
+      <HOST_VULCOUNT>2</HOST_VULCOUNT>
+      <VUL_DETAIL>
+        <VUL_ITEM>
+          <VUL_ID>60031592</VUL_ID>
+          <VUL_NAME>Linux Kernel授权问题漏洞(CVE-2011-3188)</VUL_NAME>
+          <VUL_SYNOPSIS></VUL_SYNOPSIS>
+          <VUL_CVES>CVE-2011-3188</VUL_CVES>
+          <VUL_BIDS></VUL_BIDS>
+          <VUL_SOLUTION>目前厂商已经发布了升级补丁以修复此安全问题，补丁获取链接：
+http://www.kernel.org/</VUL_SOLUTION>
+          <VUL_SEEALSO>http://www.nsfocus.net/vulndb/20805
+http://www.nsfocus.net/vulndb/17602
+http://www.securityfocus.com/bid/49289
+http://secunia.com/advisories/47511
+http://secunia.com/advisories/47307
+http://secunia.com/advisories/47241
+http://secunia.com/advisories/47039
+http://secunia.com/advisories/46972
+http://secunia.com/advisories/46824
+http://secunia.com/advisories/46795
+http://secunia.com/advisories/46598
+http://secunia.com/advisories/46595
+http://secunia.com/advisories/46590
+http://secunia.com/advisories/46589
+http://secunia.com/advisories/46287
+http://secunia.com/advisories/46539
+http://secunia.com/advisories/46543
+http://secunia.com/advisories/46585
+http://secunia.com/advisories/46587
+http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=6e5714eaf77d79ae1c8b47e3e040ff5411b717ec
+http://secunia.com/advisories/44310
+http://secunia.com/advisories/45933
+http://secunia.com/advisories/46133
+http://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.1
+http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=bc0b96b54a21246e377122d54569eef71cec535f
+http://www.openwall.com/lists/oss-security/2011/08/23/2
+https://bugzilla.redhat.com/show_bug.cgi?id=732658
+https://github.com/torvalds/linux/commit/6e5714eaf77d79ae1c8b47e3e040ff5411b717ec
+https://github.com/torvalds/linux/commit/bc0b96b54a21246e377122d54569eef71cec535f
+</VUL_SEEALSO>
+          <VUL_SEVERITY>中风险</VUL_SEVERITY>
+          <VUL_PORTS>
+            <PORT_ITEM>
+              <PORT_INFO></PORT_INFO>
+              <PORT_HOSTS>192.168.0.202</PORT_HOSTS>
+              <PORT_PROTOCOL>tcp</PORT_PROTOCOL>
+              <PORT_PORT>0</PORT_PORT>
+              <PORT_SERVICE></PORT_SERVICE>
+            </PORT_ITEM>
+          </VUL_PORTS>
+        </VUL_ITEM>
+        <VUL_ITEM>
+          <VUL_ID>53335</VUL_ID>
+          <VUL_NAME>RPC portmapper（TCP）</VUL_NAME>
+          <VUL_SYNOPSIS>ONC RPC端口映射器正在远程主机上运行。</VUL_SYNOPSIS>
+          <VUL_CVES></VUL_CVES>
+          <VUL_BIDS></VUL_BIDS>
+          <VUL_SOLUTION></VUL_SOLUTION>
+          <VUL_SEEALSO></VUL_SEEALSO>
+          <VUL_SEVERITY>低风险</VUL_SEVERITY>
+          <VUL_PORTS>
+            <PORT_ITEM>
+              <PORT_INFO></PORT_INFO>
+              <PORT_HOSTS>192.168.0.202</PORT_HOSTS>
+              <PORT_PROTOCOL>tcp</PORT_PROTOCOL>
+              <PORT_PORT>111</PORT_PORT>
+              <PORT_SERVICE>rpc-portmapper</PORT_SERVICE>
+            </PORT_ITEM>
+          </VUL_PORTS>
+        </VUL_ITEM>
+      </VUL_DETAIL>
+    </RESULTS>
+  </HOSTS>
+</RSAS_RESULT>
