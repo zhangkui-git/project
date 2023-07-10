@@ -13,7 +13,11 @@ str1_1 = Counter(str1)
 print(str1_1)
 
 
+b = [1, 5, 5, 3, 6, 5, 7]
+b.remove(5)
 
+
+print(b)
 
 
 

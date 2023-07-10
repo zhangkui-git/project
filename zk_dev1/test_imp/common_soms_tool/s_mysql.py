@@ -10,6 +10,8 @@ def select(sql):
     # print("连接成功")
     cur.execute(sql)
     res1 = cur.fetchall()
+    con.commit()  # 查询也要加，否则一次连接多次查询时会有问题
+    cur.close()
     return res1
 
 
