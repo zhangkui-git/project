@@ -14,8 +14,8 @@ password = 'wnt8000LLy&y'  # 堡垒机密码
 
 # linux 配置
 linux_port = '22'
-linux_user = 'root'
-linux_pass = 'Wnt.1@3456'
+linux_user = 'zhangkui'
+linux_pass = 'ab2021cdzk'
 
 # rdp配置
 rdp_ip = '192.168.4.119'  # 远程桌面ip
@@ -25,7 +25,7 @@ rdpPassword = 'Admin@123'  # 远程桌面密码
 name_list = ['op1']   # 堡垒机用户名
 
 # ssh配置
-ssh_ip = '192.168.5.163'
+ssh_ip = '192.168.5.153'
 
 
 # 获取本机ip

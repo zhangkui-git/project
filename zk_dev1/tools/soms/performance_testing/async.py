@@ -32,6 +32,6 @@ if __name__ == '__main__':
     warnings.filterwarnings('ignore')  # 忽略提示信息
     users_ssh(1440)  # ssh测试
     start_time = datetime.datetime.now()
-    user_rdp()  # rdp测试
+    # user_rdp()  # rdp测试
     t_result = threading.Thread(target=result_compare(start_time))
     t_result.start()  # 启动结果比对线程

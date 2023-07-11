@@ -66,8 +66,10 @@ def ssh_test(name, ssh_name, count, ip=ssh_ip):
     token = result["data"]["accessToken"]
     db = DB('database')
     userId = db.select(f"select id from soms.system_user where user_name='{name}'")  # loginUserId 用户id
+    print(222, userId)
     user_id = userId[0]['id']
     assetId = db.select(f"select id from soms.soms_asset_info where ip='{ip}'")  # assetsId 资产id
+    print(1111111, assetId)
     asset_id = assetId[0]['id']
     assetUserId = db.select(
         f"select id from soms.soms_asset_user_pwd where username='{ssh_name}' and asset_id={asset_id}")  # assetsId 资产id
