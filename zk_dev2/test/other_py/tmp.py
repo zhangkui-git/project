@@ -1,13 +1,10 @@
-print(1277.78 + 1705.88)
+# n = 12345
+# print(str(n)[::2])
+# print(str(n)[1::2])
+#
+# print(sum(map(int, str(n)[::2])) - sum(map(int, str(n)[1::2])))
 
-print(1277.78 + 1700.72)
-
-print(1277.78 + 1695.57)
-
-
-
-
-
+# a = list(map(int, str(n)[::2]))
 
 
 

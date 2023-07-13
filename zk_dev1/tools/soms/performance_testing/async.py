@@ -30,8 +30,8 @@ from setting import DIR_NAME
 if __name__ == '__main__':
     ssl._create_default_https_context = ssl.create_default_context()
     warnings.filterwarnings('ignore')  # 忽略提示信息
-    users_ssh(1440)  # ssh测试
+    # users_ssh(1440)  # ssh测试
     start_time = datetime.datetime.now()
-    # user_rdp()  # rdp测试
+    user_rdp()  # rdp测试
     t_result = threading.Thread(target=result_compare(start_time))
     t_result.start()  # 启动结果比对线程
