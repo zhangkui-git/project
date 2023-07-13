@@ -6,7 +6,3 @@
 
 # a = list(map(int, str(n)[::2]))
 
-
-
-
-
