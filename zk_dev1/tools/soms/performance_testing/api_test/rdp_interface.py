@@ -17,7 +17,7 @@ import requests
 import websocket
 from websocket import ABNF
 
-from zk_dev1.tools.soms.performance_testing.api_test.login_interface import get_iv_key, sm4_login, Login
+from zk_dev1.tools.soms.performance_testing.api_test.login_interface import *
 from zk_dev1.tools.soms.performance_testing.common.dbutil import DB
 from zk_dev1.tools.soms.performance_testing.config.config import IP, local_ip, host, password, rdp_ip, rdpPassword, name_list
 from zk_dev1.tools.soms.performance_testing.setting import DIR_NAME
@@ -94,6 +94,7 @@ def on_ping(ws, frame_data, ):
 def on_error(ws, error):
     print("-----连接出现异常，异常信息如下-----")
     print(error)
+    GetLogger().get_logger().info(f"-----连接出现异常，异常信息如下: {error}")
 
 
 def connect(num, username, rdp_name, rdp_ip, rdpPassword, headers, sessionId, user_id, asset_id, asset_user_id):
@@ -218,7 +219,6 @@ def result_compare(start_time):
 
     file_list = os.listdir(DIR_NAME + '/write_file/')  # 所有的文件
     file_list_order = []  # 排序后的文件列表[1,2,3,4,5,6,7,8,9,10]
-
     for num in file_list:  # 排序
         file_list_order.append(int(num))
         file_list_order.sort(reverse=False)
